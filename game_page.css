@@ -63,14 +63,14 @@ div {
     from{
         opacity: 0;
         /* scale: 0; */
-        transform: translateX(-100px);
-        /* clip-path: insert(100% 100% 0 0); */
+        /* transform: translateX(-100px); */
+        clip-path: insert(100% 100% 0 0);
     }
     to{
         opacity: 1;
         /* scale: 1; */
-        transform: translateX(0px);
-        /* clip-path: insert(0 0 0 0); */
+        /* transform: translateX(0px); */
+        clip-path: insert(0 0 0 0);
     }
 }
 
@@ -145,9 +145,9 @@ footer {
     padding: 20px 0px 20px 0px;
     transition: bottom 0.5s ease, opacity 1s ease;
     opacity: 0; /* initially make it invisible */
-    border: none;
-    outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgb(255, 255, 255, 2);
     transform: scale(0.8);
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
 }
